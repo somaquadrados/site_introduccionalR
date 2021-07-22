@@ -1,0 +1,42 @@
+---
+title: Clase 2
+author: ''
+date: '2021-07-20'
+slug: clase-2
+categories: []
+tags: []
+---
+
+## Archivos
+
+- [`clase_2.R`](clase_2.R)
+- [datos.xlsx](datos.xlsx)
+- [datos.txt](datos.txt)
+- [datos.csv](datos.csv)
+- [tidy_ej.xlsx](tidy_ej.xlsx)
+
+## Contenido de hoy
+
+- Manejo de objetos en R
+- ¿Cómo armar mi tabla de datos?
+- Tidyverse
+- Importar datos a R
+- Operador pipe (`%>%`)
+- tidyr
+- dplyr
+
+## Diapositivas
+
+```{r echo=FALSE}
+knitr::include_url('clase_2.html')
+```
+
+[Download en PDF](clase_2.pdf)
+
+## Youtube
+
+[Vídeo clase 2]()
+
+## Formulario de envío de ejercicios
+
+[Clic aquí](https://forms.gle/ryeDtZNHuzk56LtF8)

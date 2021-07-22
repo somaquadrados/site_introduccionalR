@@ -1,0 +1,38 @@
+---
+title: Clase 0
+author: ''
+date: '2021-07-22'
+slug: clase-0
+categories: []
+tags: []
+---
+
+## Script
+
+- [clase_0.R](clase_0.R)
+
+## Contenido 
+
+- Introducción al curso
+
+- Programación
+
+- IDE
+
+- RStudio
+
+## Diapositivas
+
+```{r echo=FALSE}
+knitr::include_url('clase_0.html', height = "500px")
+```
+
+[Download en PDF](clase_0.pdf)
+
+## Youtube
+
+[Vídeo clase 0]()
+
+## Formulario de envío de ejercicios
+
+[Clic aquí](https://docs.google.com/forms/d/e/1FAIpQLSeaqJzOCMnPfJxpPS6Co9dpps7gHLaA5QaYlY21XAMGDDA9sg/viewform)

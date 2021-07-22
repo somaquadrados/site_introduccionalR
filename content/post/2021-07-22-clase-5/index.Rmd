@@ -1,0 +1,39 @@
+---
+title: Clase 5
+author: ''
+date: '2021-07-16'
+slug: clase-5
+categories: []
+tags: []
+---
+
+## Archivos
+
+- [enejul2018.csv](enejul2018.csv)
+- [juldic2018.csv](juldic2018.csv)
+
+## Contenido de hoy
+
+- R Markdown
+- Instalación
+- Estructura de un R Markdown
+- YAML
+- Texto
+- Renderizado el documento
+- Chunk
+
+## Diapositivas
+
+```{r echo=FALSE}
+knitr::include_url('clase_5.html')
+```
+
+[Download en PDF](clase_5.pdf)
+
+## Youtube
+
+[Vídeo clase 5]()
+
+## Formulario de envío de ejercicios
+
+[Clic aquí](https://forms.gle/x4EbVJX76dZo3FQP9)
