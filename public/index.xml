@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introducción al análisis de datos biológicos con R</title>
-    <link>/</link>
+    <link>https://introduccionalr.netlify.app/</link>
     <description>Recent content on Introducción al análisis de datos biológicos con R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://introduccionalr.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Clase 0</title>
-      <link>/2021/07/22/clase-0/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/22/clase-0/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/22/clase-0/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/22/clase-0/</guid>
       <description>Scriptclase_0.RContenidoIntroducción al curso
 Programación
 IDE
 RStudio
 DiapositivasDownload en PDF
-YoutubeVídeo clase 0
+Youtube   Vídeo: https://www.youtube.com/watch?v=EuOmFWgb2x8
 Formulario de envío de ejerciciosClic aquí
 </description>
     </item>
     
     <item>
       <title>Clase 1</title>
-      <link>/2021/07/21/clase-1/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/21/clase-1/</link>
       <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/21/clase-1/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/21/clase-1/</guid>
       <description>Scriptclase_1.RContenidoObjetos y atribuciones
 Clases
 Tipos de objetos
 Estructuras de Control
 Funciones
 DiapositivasDownload en PDF
-YoutubeVídeo clase 1
-Formulario de envío de ejerciciosClic aquí
+YoutubeVídeo: https://www.youtube.com/embed/A5A5lJYkuk0
+Formulario de envío de ejerciciosClic aquí
 </description>
     </item>
     
     <item>
       <title>Clase 2</title>
-      <link>/2021/07/20/clase-2/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/20/clase-2/</link>
       <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/20/clase-2/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/20/clase-2/</guid>
       <description>Archivosclase_2.Rdatos.xlsxdatos.txtdatos.csvtidy_ej.xlsxContenido de hoyManejo de objetos en R¿Cómo armar mi tabla de datos?TidyverseImportar datos a ROperador pipe (%&amp;gt;%)tidyrdplyrDiapositivasDownload en PDF
 YoutubeVídeo clase 2
 Formulario de envío de ejerciciosClic aquí
@@ -54,28 +54,28 @@
     
     <item>
       <title>Clase 3</title>
-      <link>/2021/07/19/clase-3/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/19/clase-3/</link>
       <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/19/clase-3/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/19/clase-3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clase 4</title>
-      <link>/2021/07/18/clase-4/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/18/clase-4/</link>
       <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/18/clase-4/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/18/clase-4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clase 5</title>
-      <link>/2021/07/16/clase-5/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/16/clase-5/</link>
       <pubDate>Fri, 16 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/16/clase-5/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/16/clase-5/</guid>
       <description>Archivosenejul2018.csvjuldic2018.csvContenido de hoyR MarkdownInstalaciónEstructura de un R MarkdownYAMLTextoRenderizado el documentoChunkDiapositivasDownload en PDF
 YoutubeVídeo clase 5
 Formulario de envío de ejerciciosClic aquí
@@ -84,19 +84,19 @@
     
     <item>
       <title>Trabajo final</title>
-      <link>/2021/07/15/trabajo-final/</link>
+      <link>https://introduccionalr.netlify.app/2021/07/15/trabajo-final/</link>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/07/15/trabajo-final/</guid>
+      <guid>https://introduccionalr.netlify.app/2021/07/15/trabajo-final/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://introduccionalr.netlify.app/about/</link>
       <pubDate>Mon, 05 Jul 2021 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://introduccionalr.netlify.app/about/</guid>
       <description>Introducción al análisis de datos biológicos con R Sobre el curso ¿De qué se trata el curso? Este es un curso de un mes y medio en programación R para análisis de datos biológicos. Se realiza de forma virtual y contará con una combinación de clases sincrónicas y asincrónicas, con ejercicios que se entregarán semanalmente y una presentación final. Es un curso intensivo y desafiante que invita al estudiante a pensar y desarrollar algoritmos para el análisis de datos biológicos.</description>
     </item>
     
