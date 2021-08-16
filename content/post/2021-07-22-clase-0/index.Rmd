@@ -27,7 +27,7 @@ tags: []
 knitr::include_url('clase_0.html', height = "500px")
 ```
 
-[Download en PDF](clase_0.pdf)
+[Download en PDF](https://1drv.ms/b/s!AqEf2XJKAY50krc2WvUTid_2a8J07Q?e=iun9TL)
 
 ## Youtube
 
