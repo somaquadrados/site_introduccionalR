@@ -1,0 +1,26 @@
+---
+title: ¿Cómo funciona este curso?
+author: ''
+date: '2021-08-15'
+slug: como-funciona
+categories: []
+tags: []
+---
+
+## Cada semana necesitas:
+
+1. Ver los video lección.
+
+2. Realiza los ejercicios que estarán en un archivo .R.
+
+3. Envía la resolución de los ejercicios y tus dudas a través del formulario de Google.
+
+4. Participar en las clases de los viernes por la tarde cuando revisaremos el material y discutiremos las preguntas sobre los ejercicios.
+
+## Trabajo final
+
+Según la información que ha enviado sobre su trabajo/investigación, hará un trabajo final que utiliza datos y rutinas R similares a sus necesidades. Tendrás dos semanas para completar el trabajo hasta el día de la entrega.
+
+## ¿Dudas?
+
+Envíenos un correo electrónico o un mensaje en telegram.
