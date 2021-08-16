@@ -6,7 +6,20 @@
     <description>Recent content in Posts on Introducción al análisis de datos biológicos con R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://introduccionalr.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://introduccionalr.netlify.app/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Cómo funciona este curso?</title>
+      <link>https://introduccionalr.netlify.app/2021/08/15/como-funciona/</link>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://introduccionalr.netlify.app/2021/08/15/como-funciona/</guid>
+      <description>Cada semana necesitas:Ver los video lección.
+Realiza los ejercicios que estarán en un archivo .R.
+Envía la resolución de los ejercicios y tus dudas a través del formulario de Google.
+Participar en las clases de los viernes por la tarde cuando revisaremos el material y discutiremos las preguntas sobre los ejercicios.
+Trabajo finalSegún la información que ha enviado sobre su trabajo/investigación, hará un trabajo final que utiliza datos y rutinas R similares a sus necesidades.</description>
+    </item>
+    
     <item>
       <title>Clase 0</title>
       <link>https://introduccionalr.netlify.app/2021/07/22/clase-0/</link>
@@ -35,8 +48,8 @@
 Estructuras de Control
 Funciones
 DiapositivasDownload en PDF
-YoutubeVídeo: https://www.youtube.com/embed/A5A5lJYkuk0
-Formulario de envío de ejerciciosClic aquí
+YoutubeVídeo: https://www.youtube.com/embed/A5A5lJYkuk0
+Formulario de envío de ejerciciosClic aquí
 </description>
     </item>
     
