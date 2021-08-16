@@ -31,7 +31,7 @@ knitr::include_url('clase_0.html', height = "500px")
 
 ## Youtube
 
-**Vídeo**: [https://www.youtube.com/watch?v=EuOmFWgb2x8]()
+**Vídeo**: [https://youtu.be/EuOmFWgb2x8](https://youtu.be/EuOmFWgb2x8)
 
 ## Formulario de envío de ejercicios
 
