@@ -29,7 +29,7 @@ tags: []
 knitr::include_url('clase_1.html')
 ```
 
-[Download en PDF](https://1drv.ms/b/s!AqEf2XJKAY50ku50o1PwUH4qSzUQxQ?e=9xGhRx)
+[Download en PDF](https://1drv.ms/b/s!AqEf2XJKAY50ku50o1PwUH4qSzUQxQ?e=iPTWvB)
 
 ## Youtube
 
