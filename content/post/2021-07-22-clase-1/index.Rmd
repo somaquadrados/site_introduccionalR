@@ -35,6 +35,8 @@ knitr::include_url('clase_1.html')
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A5A5lJYkuk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+[Vídeo Clase 1](https://www.youtube.com/embed/A5A5lJYkuk0)
+
 ## Formulario de envío de ejercicios
 
 [Clic aquí](https://forms.gle/J4iwNMt9PNSmjxcK8)
