@@ -31,10 +31,6 @@ knitr::include_url('clase_0.html', height = "500px")
 
 ## Youtube
 
-```{r echo=FALSE}
-blogdown::shortcode("youtube", "EuOmFWgb2x8")
-```
-
 **Vídeo**: [https://www.youtube.com/watch?v=EuOmFWgb2x8]()
 
 ## Formulario de envío de ejercicios
