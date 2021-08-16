@@ -31,7 +31,9 @@ knitr::include_url('clase_0.html', height = "500px")
 
 ## Youtube
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EuOmFWgb2x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```{r echo=FALSE}
+blogdown::shortcode("youtube", "EuOmFWgb2x8")
+```
 
 [Vídeo clase 0](https://www.youtube.com/embed/EuOmFWgb2x8)
 
