@@ -33,7 +33,7 @@ knitr::include_url('clase_1.html')
 
 ## Youtube
 
-**Vídeo**: [https://www.youtube.com/embed/A5A5lJYkuk0](https://www.youtube.com/embed/A5A5lJYkuk0)
+**Vídeo**: [https://youtu.be/A5A5lJYkuk0](https://youtu.be/A5A5lJYkuk0)
 
 ## Formulario de envío de ejercicios
 
