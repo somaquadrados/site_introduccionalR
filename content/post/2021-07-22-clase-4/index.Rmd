@@ -1,0 +1,44 @@
+---
+title: Clase 4
+author: ''
+date: '2021-07-18'
+slug: clase-4
+categories: []
+tags: []
+---
+
+## Archivos
+
+- [Ejercicio_3.csv](Ejercicio_3.csv)
+- [lepto.csv](lepto.csv)
+
+## Contenido de hoy
+
+- Estadísticas descriptivas: las frecuencias
+- Gráficos
+
+## Diapositivas
+
+### Clase teórica
+
+```{r echo=FALSE}
+knitr::include_url('Clase_4_Teoria.html')
+```
+[Download en PDF](Clase_4_Teoria_final.pdf)
+
+### Tarea de 🏠
+```{r echo=FALSE}
+options(Encoding="UTF-8")
+knitr::include_url('Clase_4_ejercicios.html')
+```
+
+[Download en PDF](Clase_4_ejercicios.pdf)
+
+
+## Youtube
+
+[Vídeo clase 4](https://youtu.be/2QyXZqqBeo4)
+
+## Formulario de envío de ejercicios
+
+[Clic aquí](https://docs.google.com/forms/d/e/1FAIpQLSdXgG901WWmxcIkoagjPqXezzgyte-DjN0aIcqvxuxbQBCWuA/viewform)

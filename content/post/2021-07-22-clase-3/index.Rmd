@@ -1,0 +1,48 @@
+---
+title: Clase 3
+author: ''
+date: '2021-07-19'
+slug: clase-3
+categories: []
+tags: []
+---
+
+## Archivos
+
+- [PDF ejercicios](Clase_3_Ejercicios.pdf)
+- [Ejercicio_1.csv](Ejercicio_1.csv)
+- [Ejercicio_2.csv](Ejercicio_2.csv)
+- [Ejercicio_3.csv](Ejercicio_3.csv)
+- [Ejercicio_4.csv](Ejercicio_4.csv)
+
+## Contenido de hoy
+
+- Variables estadística
+- Distribución de probabilidad
+- Estadística descriptiva: medidas de posición
+- Estadística descriptiva: medidas de dispersión
+
+## Diapositivas
+
+### Clase teórica
+```{r echo=FALSE}
+knitr::include_url('teoria.html')
+```
+
+[Download en PDF](Clase_3_Teoria.pdf)
+
+### Tarea de 🏠
+```{r echo=FALSE}
+knitr::include_url('Ejercicios.html')
+```
+
+[Download en PDF](Clase_3_Ejercicios.pdf)
+
+
+## Youtube
+
+[Vídeo clase 3](https://youtu.be/LNF3uqZerdc)
+
+## Formulario de envío de ejercicios
+
+[Clic aquí](https://docs.google.com/forms/d/e/1FAIpQLSdFYSnzmMZKlmxP12KDPQwA91Vn_9ndiKZn_2DsjZjtHn6xIg/viewform)
