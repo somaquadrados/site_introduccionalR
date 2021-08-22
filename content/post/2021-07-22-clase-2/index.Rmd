@@ -37,6 +37,15 @@ knitr::include_url('clase_2.html')
 
 [Vídeo clase 2](https://youtu.be/RHCISCvY72s)
 
-## Formulario de envío de ejercicios
+## Ejercicios
+
+### Formulario de envío de ejercicios
 
 [Clic aquí](https://forms.gle/ryeDtZNHuzk56LtF8)
+
+### Ejercicios en clase
+
+[Haga clic aquí](https://ahaslides.com/INTRORCL2) o use qrcode: 
+
+<img src="figs/44-qrcode.png" width=25%>
+
