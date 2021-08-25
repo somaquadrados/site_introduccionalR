@@ -35,7 +35,7 @@ knitr::include_url('clase_2.html')
 
 ## Youtube
 
-[Vídeo clase 2](https://youtu.be/RHCISCvY72s)
+[Vídeo clase 2](https://youtu.be/Oo36eAjrqfA)
 
 ## Ejercicios
 
