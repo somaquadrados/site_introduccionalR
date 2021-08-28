@@ -45,7 +45,14 @@ knitr::include_url('clase_2.html')
 
 ### Ejercicios en clase
 
-[Haga clic aquí](https://ahaslides.com/INTRORCL2) o use qrcode: 
+[Haga clic aquí](https://ahaslides.com/INTRORCL2)
 
-<img src="figs/44-qrcode.png" width=25%>
+--------------------------------------------------------------------------------
+
+# Ejercicios resueltos
+
+- 🏫 clase:
+```{r echo=FALSE}
+knitr::include_url('ejercicios_clase.html')
+```
 

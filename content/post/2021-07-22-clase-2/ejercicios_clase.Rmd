@@ -1,0 +1,191 @@
+---
+title: "Ejercicios Clase 2"
+author: "Marília Melo Favalesso"
+date: "27/08/2021"
+output:
+  html_document: 
+    theme: lumen
+---
+
+## •• Manejo de objetos en R ••
+
+1.  Quiero transformar la columna "género" del data.frame **datos** en un factor. ¿Cómo lo hago?
+
+-   [x] `datos$genero <- as.factor(datos$genero)`
+-   [x] `datos[,"genero"] <- as.factor(datos$genero)`
+-   [x] `datos$genero <- as.factor(datos[,"genero"])`
+
+2.  Considerando el objeto **hospita**l, ¿cómo seleccionar las columnas "Género" y "Edad"?
+
+    ```{r}
+    Pacientes <- paste("Paciente", 1:6, sep = "_")
+    Barrio <- c(12, 28, 7, 20, 19, 8)
+    Genéro <- c("F", "M", "F", "M", "F", "M")
+    Edad <- c(57, 60, 39, 56, 67, 33)
+    Año <- c(2020, 2021, 2021, 2020, 2018, 2018)
+    Médico <- c("A", "B", "C", "A", "B", "C")
+
+    hospital <- data.frame(Pacientes, Barrio, Genéro, 
+                           Edad, Año, Médico)
+
+    hospital
+    ```
+
+-   [x] `hospital[, c("Genéro", "Edad")]`
+
+-   [ ] `hospital$c("Genéro", "Edad")`
+
+-   [ ] `hospital[, "Genéro", "Edad"]`
+
+3.  Considerando el objeto **hospital**, ¿cómo seleccionar solo pacientes mujeres?
+
+-   [x] `hospital[c(1, 3, 5),]`
+
+-   [ ] `hospital[, c(1, 3, 5)]`
+
+-   [x] `hospital[hospital$Genéro == "F",]`
+
+4.  Considerando el objeto **hospital**, ¿Cómo añadir una columna?
+
+-   [x] `hospital$nueva <- c(DATOS)`
+
+-   [x] `hospital[,'nueva'] <- c(DATOS)`
+
+-   [ ] `hospital[nueva, ] <- c(DATOS)`
+
+## •• Seleccionar elementos por condición ••
+
+5.  Considerando un dado vector llamado **ve**, ¿qué significa `ve! = 30`?
+
+-   [ ] ve es igual a 30
+
+-   [x] ve es distinto de 30
+
+-   [ ] ve o 30
+
+6.  Considerando un vector dado llamado **ve**, ¿qué significa `ve[ve < 30]`?
+
+-   [ ] Mostrar los valores superiores a 30 en ve
+
+-   [x] Mostrar los valores inferiores a 30 ve
+
+-   [ ] Mostrar los valores iguales a 30
+
+7.  Tomó muestras de ratas en tres áreas de Puerto Iguazú. En estos tres anotó la abundancia mensual de ratas durante dos años (24 meses). ¿Cómo comprobar si alguno de los trés sitios tenía una abundancia\> 50?
+
+-   [x] `c(loc1, loc2, loc3) > 50`
+
+-   [x] `table(c(loc1, loc2, loc3) > 50)`
+
+-   [ ] `c(loc1, loc2, loc3) %in% 50`
+
+8.  Tomó muestras de ratas en tres áreas de Puerto Iguazú. En estos tres anotó la abundancia mensual de ratas durante dos años (24 meses). ¿Cómo selecciono solo valores que son mayores que 0 para loc1 y guarda-lo en un nuevo objeto?
+
+-   [ ] loc1_2 \<- loc1 \> 0
+
+-   [x] loc1_2 \<- loc1[loc1 \> 0]
+
+-   [ ] loc1_2 \<- loc1[loc2 \> 0]
+
+9.  Tomó muestras de ratas en tres áreas de Puerto Iguazú. En estos tres anotó la abundancia mensual de ratas durante dos años (24 meses). ¿Cómo selecciono solo valores que son mayores que 0 para loc1 y guarda-lo en un nuevo objeto?
+
+-   [ ] loc1_2 \<- loc1 \> 0
+
+-   [x] loc1_2 \<- loc1[loc1 \> 0]
+
+-   [ ] loc1_2 \<- loc1[loc2 \> 0]
+
+10. Tiene una tabla con valores de temperatura, lluvia y abundancia de flebótomos que muestreó en los ultimos 5 meses. En toda la tabla, ¿hay algún valor cero?
+
+```{r}
+temp <- c(21, 17, 28, 25, 18)
+lluvia <- c(93, 67, 75, 41, 82)
+abundancia <- c(79, 18, 62, 4, 89)
+
+flebo <- data.frame(temp, lluvia, abundancia)
+table(flebo == 0)
+```
+
+-   [ ] Sí
+
+-   [x] No
+
+## •• Tidyverse ••
+
+**!! `paquete::función()`** **!!**
+
+-   Podemos usar la función de un paquete sin llamarlo con `library()` en R.
+
+-   Para esto ponemos el nombre del paquete, dos veces dos puntos (: :) y el nombre de la función que queremos usar en R
+
+11. ¿Qué paquete y función usar para abrir la tabla **tidy_ej.xlsx** en su entorno R?
+
+-   [ ] 
+
+```{r eval=FALSE, include=TRUE}
+tidy_ej <- readr::read_delim(file = "tidy_ej.xlsx", delim = "\t")
+```
+
+-   [ ] 
+
+```{r eval=FALSE, include=TRUE}
+tidy_ej <- readr::read_csv2(file = "tidy_ej.xlsx")
+```
+
+-   [x] 
+
+```{r}
+tidy_ej <- readxl::read_xlsx("tidy_ej.xlsx")
+```
+
+12. ¿La tabla "tidy_ej" contiene valores faltantes (na)?
+
+```{r eval=FALSE, include=TRUE}
+tidy_ej %>% is.na() %>% table()
+```
+
+-   [x] Sí
+
+-   [ ] No
+
+13. ¿Cómo separar la columna "departamento - año" de la tabla **tidy_ej** en dos columnas?
+
+-   [x] `tidy_ej %>% separate(departamento_ano, c("departamento", "ano"), sep = "_")`
+
+-   [ ] `tidy_ej %>% separate(departamento_ano, departamento, ano)`
+
+14. ¿Cómo unir las columnas "PNI", "Urbano" y "Rural" de la tabla **tidy_ej** en una sola columna?
+
+-   [x] `tidy_ej %>% pivot_longer(c(pni, urbano, rural), names_to = "areas",                          values_to = "numero_acc")`
+
+-   [ ] `tidy_ej %>% pivot_wider(c(pni, urbano, rural), names_to = "areas",                          values_to = "numero_acc")`
+
+15. Considerando la tabla **tidy_ej2**, ¿cómo ordenar los datos en orden ascendente según la columna "ID"?7
+
+-   [x] `tidy_ej2 %>% arrange(ID)`
+
+-   [ ] `tidy_ej2 %>% arrange(desc(ID))`
+
+16. Considerando la tabla **tidy_ej2**, ¿cómo eliminar la columna "temperatura"?
+
+-   [ ] `tidy_ej2 %>% select(temperatura)`
+
+-   [x] `tidy_ej2 %>% select(-temperatura)`
+
+17. Considerando la tabla **tidy_ej2**, divida el valor de la columna "número de accidentes" por la columna "población" y multiplique por 100,000.
+
+-   [ ] `tidy_ej2 %>% mutate(n_pob = (numero_acc/poblacion*100000))`
+
+-   [x] `tidy_ej2 %>% mutate(n_pob = (numero_acc/poblacion)*100000)`
+
+18. ¿Cómo exportar la tabla "tidy_ej2" desde su entorno R a su directorio de trabajo?
+
+-   `write.csv2(tidy_ej2, "data.csv")`
+
+19. Si quiero unir dos tablas pero excluyendo los datos de fila adicionales de la primera tabla, ¿qué función de Tidyverse debo usar?
+
+-   [ ] `full_join()`
+
+-   [ ] `left_join()`
+
+-   [x] `right_join()`

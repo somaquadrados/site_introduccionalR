@@ -211,7 +211,9 @@ Médico <- c("A", "B", "C", "A", "B", "C")
 
 hospital <- data.frame(Pacientes, Barrio, Genéro, 
                        Edad, Año, Médico)
-hospital
+hospital[,"Pacientes"]
+
+hospital$c("Pacientes", "Médico")
 
 # 1 - Trabajarás con las variables "género", "edad", "barrio" y "médico". 
 #     Descarte las otras variables de la tabla.
@@ -957,7 +959,7 @@ tidy_ej2 %>%
 tidy_ej2 %>% mutate(n_pob = (numero_acc/poblacion)*100000)
 
 ## 5 - Salvar la tabla como un ".csv".
-write.csv2("data.csv")
+write.csv2(tidy_ej2, "data.csv")
 
 ## ----
 
@@ -972,53 +974,79 @@ write.csv2("data.csv")
 
 ## 1. Crea un objeto tipo vector con valores aleatorios entre 10 y 50 que 
 #     contenga 15 números.
-
+objeto <- sample(10:50, 15)
+objeto
+  
 # 1a - Pregunte a R cuáles son los valores entre la posición 2 y 5.
+objeto[2:5]
 
-# 1b - Pregunte a R qué vector tiene los valores 2, 15 y 25.
+# 1b - Pregunte a R si el vector tiene los valores 2, 15 y 25.
+objeto %in% c(2, 15, 25) %>% table()
+objeto[objeto == c(2, 15, 25)]
 
 # 1c - Multiplica todos los valores vectoriales por -1. Almacene el resultado 
 #      en un nuevo objeto llamado vector_negativo.
+vector_negativo <- objeto * -1
+vector_negativo
 
 # 1d - Utilice la función length() para verificar el tamaño del vector.
+length(objeto)
 
 # 1e - Utilice la función sum() para sumar los valores vectoriales.
+sum(objeto)
 
 ## 2. Registraste el número mensual de casos de dengue en Argentina durante 
 ##    5 años. Los resultados están en la siguiente matrix:
 dengue <- sample(0:500, 5*12) %>%
   matrix(nrow = 12) 
 
+dengue
+
 ## En las lineas tenemos los meses y columnas los años. 
 ## Ahora interprete los siguientes resultados.
 
-length(dengue)
-dim(dengue)
-sum(dengue)
-dengue[1,] %>% sum()
-dengue[,5] %>% sum()
-dengue[2,3]
-dengue[,1] > dengue[,2]
-dengue[,4] %in% 0
+length(dengue) # tamaño de la matrix (12L * 5C)
+dim(dengue) # dimensión de la matrix 
+sum(dengue) # numero de casos de dengue documentados
+dengue[1,] %>% sum() # soma da primeira linha - soma dos meses de janeiro
+dengue[,5] %>% sum() # soma da quinta coluna - soma das coletas do quinto ano
+dengue[2,3] # quantidade de dengue no mês de fev no ano 3
+dengue[,1] > dengue[,2] # meses que o ano 2 teve mais casos que no ano 1
+dengue[,4] %in% 0 # no ano 4 teve algum mês sem dengue?
 
 ## 3. Transformar el objeto "dengue" en un data.frame.
 
+dengue2 <- dengue %>% data.frame() %>%
+  rename(Año_1 = X1, Año_2 =  X2, Año_3 = X3, Año_4 = X4, Año_5 = X5)
+
+dengue2
+
 ## 3a. ¿Para qué sirve la función str()?
-str(dengue2)
+str(dengue2) 
+# utilizado para mostrar de forma compacta la estructura interna de un objeto R
 
 ## 3b. ¿Qué devuelve la función head()?
 head(dengue2)
+# las 6 primeras lineas del data.frame
 
 ## 3c. Agregue una columna con el nombre de los meses del año a la tabla.
+dengue2$mes <- c("enero", "febrero", "marzo", "abril", "mayo", "juno", "julio",
+                 "agosto", "septiembre", "octubre", "noviembte", "diciembre")
+
+dengue2 <- dengue2 %>% mutate(mes2 = c(1:12))
+
+dengue2
 
 ## 3d. El valor del mes 1 en el año 1 es ...
 dengue2[1, 1]
 
 ## ... Pero descubrió que este valor era incorrecto, en realidad es 500!
-dengue2[1, 1] = 500
+dengue2[1, 1] <- 500
 dengue2
 
 ## Ahora cambie el valor del mes 12 en el año 5 por 105.
+dengue2[12, 5] <- 105
+dengue2
 
 ## --
 
@@ -1029,28 +1057,38 @@ iris <- iris
 iris
 
 ## 4. Convierte esta base en un tibble.
+iris_tibble <- as_tibble(iris)
+iris_tibble 
 
 ## 5. Utilice glimpse() para ver una descripción general rápida de los datos.
+glimpse(iris_tibble)
 
 ## 6. Imprima la columna "Sepal.Length" usando la función select(). Intente 
 ##    usar la función pull() en lugar de seleccionar para ver cuál es la 
 ##    diferencia.
+iris_tibble %>% select(Sepal.Length)
+iris_tibble %>% pull(Sepal.Length)
 
 ## 7. Imprima toda la tabla excepto la columna "Species"  usando la función 
 ##    select().
+iris_tibble %>% select(-Species)
 
 ## 8. Imprima las columnas Sepal.Length, Sepal.Width, Petal.Length y 
 ##    Petal.Width. Considere usar el símbolo de dos puntos (:) para simplificar 
 ##    la selección de columnas consecutivas.
+iris_tibble %>% select(Sepal.Length:Petal.Width)
 
 ## 9. Crea dos columnas nuevas. El primero con la relación entre la altura y el 
 ##    ancho del sépalo y el segundo con del pétalo (length/width). 
+iris_tibble <- iris_tibble %>% mutate(sepal_razon = Sepal.Length/Sepal.Width,
+                       petal_razon = Petal.Length/Petal.Width)
 
-## 10. Create an object called "iris2" with the species in the columns and the 
-##     measurements of "sepal" and "petal" in the rows.
-
-## 11. Crea un objeto llamado "iris2" con la especie en las columnas y las
+## 10. Crea un objeto llamado "iris2" con la especie en las columnas y las
 ##     medidas en las filas.
+iris %>% pivot_longer(c(Sepal.Length:Petal.Width),
+                             names_to = "parte_anatómica", values_to = "medidas") 
+
+teste %>% pivot_wider(names_from = Species, values_from = medidas, values_fn = mean)
 
 # -------------------------- •• Fin •• ---------------------------------- #
 

@@ -7,6 +7,8 @@ categories: []
 tags: []
 ---
 
+# Pre-clase
+
 ## Script
 
 - [clase_1.R](clase_1.R)
@@ -43,6 +45,20 @@ knitr::include_url('clase_1.html')
 
 ### Ejercicios en clase
 
-[Haga clic aquí](https://ahaslides.com/INTRORC1) o use qrcode: 
+[Haga clic aquí](https://ahaslides.com/INTRORC1) 
 
-<img src="figs/76-qrcode.png" width=25%>
+
+-------------------------------------------------------------------------------
+
+
+# Ejercicios resueltos
+
+- 🏠 tarea: [resolvido_clase1.R](resolvido_clase1.R)
+
+- 🏫 clase:
+```{r echo=FALSE}
+knitr::include_url('ejercicios_clase.html')
+```
+
+
+
