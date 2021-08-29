@@ -362,31 +362,31 @@ Integer.</p></li>
 </ol>
 <ul class="task-list">
 <li><p><input type="checkbox" disabled></input>
-packages.install(“nombre_paquete”)</p></li>
+<code>packages.install(&quot;nombre_paquete&quot;)</code></p></li>
 <li><p><input type="checkbox" disabled></input>
-install.packages(nombre_paquete)</p></li>
+<code>install.packages(nombre_paquete)</code></p></li>
 <li><p><input type="checkbox" disabled checked></input>
-install.packages(“nombre_paquete”)</p></li>
+<code>install.packages(&quot;nombre_paquete&quot;)</code></p></li>
 </ul>
 <ol start="14" style="list-style-type: decimal">
 <li>Para instalar paquetes de GITHUB, ¿qué comando usamos?</li>
 </ol>
 <ul class="task-list">
 <li><p><input type="checkbox" disabled checked></input>
-devtools::install_github(“repo/nombre_paquete”)</p></li>
+<code>devtools::install_github(&quot;repo/nombre_paquete&quot;)</code></p></li>
 <li><p><input type="checkbox" disabled></input>
-devtools::install.github(repo/nombre_paquete)</p></li>
+<code>devtools::install.github(repo/nombre_paquete)</code></p></li>
 </ul>
 <ol start="15" style="list-style-type: decimal">
 <li>¿Cómo cargar el paquete para usarlo en R?</li>
 </ol>
 <ul class="task-list">
 <li><p><input type="checkbox" disabled></input>
-library(“nombre_paquete”)</p></li>
+<code>library(&quot;nombre_paquete&quot;)</code></p></li>
 <li><p><input type="checkbox" disabled checked></input>
-library(nombre_paquete)</p></li>
+<code>library(nombre_paquete)</code></p></li>
 <li><p><input type="checkbox" disabled></input>
-library_R(“nombre_paquete”)</p></li>
+<code>library_R(&quot;nombre_paquete&quot;)</code></p></li>
 </ul>
 <ol start="16" style="list-style-type: decimal">
 <li>Es verdadero…</li>
@@ -431,25 +431,25 @@ total_dias(1)</code></pre>
 </ol>
 <pre class="r"><code>maal &lt;- matrix(sample(0:100, 9), ncol = 3); maal</code></pre>
 <pre><code>##      [,1] [,2] [,3]
-## [1,]   30   28   86
-## [2,]   34   43   64
-## [3,]   69   70   88</code></pre>
+## [1,]   91   63    0
+## [2,]   42   10   64
+## [3,]   41   72   19</code></pre>
 <ol start="5" style="list-style-type: decimal">
 <li>Cree un data.frame con los datos del ejercicio 2 y el ejercicio 3. Las especies animales deben estar en las filas.</li>
 </ol>
 <pre class="r"><code>maal &lt;- data.frame(sp_ven, maal); maal</code></pre>
 <pre><code>##                sp_ven X1 X2 X3
-## 1 Micrurus corallinus 30 28 86
-## 2      Apis mellifera 34 43 64
-## 3     Lonomia obliqua 69 70 88</code></pre>
+## 1 Micrurus corallinus 91 63  0
+## 2      Apis mellifera 42 10 64
+## 3     Lonomia obliqua 41 72 19</code></pre>
 <ol start="6" style="list-style-type: decimal">
 <li>Cambie el nombre de las columnas a: c(“animal/vector”, “2018”, “2019”, “2020”).</li>
 </ol>
 <pre class="r"><code>colnames(maal) &lt;- c(&quot;animal/vector&quot;, &quot;2018&quot;, &quot;2019&quot;, &quot;2020&quot;); maal</code></pre>
 <pre><code>##         animal/vector 2018 2019 2020
-## 1 Micrurus corallinus   30   28   86
-## 2      Apis mellifera   34   43   64
-## 3     Lonomia obliqua   69   70   88</code></pre>
+## 1 Micrurus corallinus   91   63    0
+## 2      Apis mellifera   42   10   64
+## 3     Lonomia obliqua   41   72   19</code></pre>
 <ol start="7" style="list-style-type: decimal">
 <li>Haga una loop ‘for’ para imprimir los números almacenados en el objeto a.</li>
 </ol>
@@ -458,72 +458,72 @@ total_dias(1)</code></pre>
 for(i in a){
   print(i)
 }</code></pre>
-<pre><code>## [1] 82
-## [1] 88
-## [1] 170
-## [1] 114
-## [1] 130
-## [1] 167
-## [1] 76
-## [1] 12
-## [1] 68
-## [1] 89
-## [1] 184
-## [1] 86
-## [1] 57
-## [1] 118
-## [1] 121
-## [1] 116
-## [1] 125
-## [1] 154
-## [1] 90
-## [1] 198
-## [1] 180
-## [1] 45
-## [1] 165
-## [1] 122
-## [1] 103
-## [1] 61
+<pre><code>## [1] 72
+## [1] 87
 ## [1] 110
-## [1] 179
-## [1] 177
-## [1] 182</code></pre>
+## [1] 74
+## [1] 67
+## [1] 188
+## [1] 55
+## [1] 166
+## [1] 21
+## [1] 69
+## [1] 164
+## [1] 133
+## [1] 8
+## [1] 39
+## [1] 40
+## [1] 48
+## [1] 123
+## [1] 70
+## [1] 51
+## [1] 32
+## [1] 196
+## [1] 38
+## [1] 4
+## [1] 146
+## [1] 77
+## [1] 60
+## [1] 12
+## [1] 116
+## [1] 191
+## [1] 165</code></pre>
 <ol start="8" style="list-style-type: decimal">
 <li>Haga un loop que imprime los valores del objeto “a” multiplicados por -2.</li>
 </ol>
 <pre class="r"><code>for(i in a){
   print(i*-2)
 }</code></pre>
-<pre><code>## [1] -164
-## [1] -176
-## [1] -340
-## [1] -228
-## [1] -260
-## [1] -334
-## [1] -152
-## [1] -24
-## [1] -136
-## [1] -178
-## [1] -368
-## [1] -172
-## [1] -114
-## [1] -236
-## [1] -242
-## [1] -232
-## [1] -250
-## [1] -308
-## [1] -180
-## [1] -396
-## [1] -360
-## [1] -90
-## [1] -330
-## [1] -244
-## [1] -206
-## [1] -122
+<pre><code>## [1] -144
+## [1] -174
 ## [1] -220
-## [1] -358
-## [1] -354
-## [1] -364</code></pre>
+## [1] -148
+## [1] -134
+## [1] -376
+## [1] -110
+## [1] -332
+## [1] -42
+## [1] -138
+## [1] -328
+## [1] -266
+## [1] -16
+## [1] -78
+## [1] -80
+## [1] -96
+## [1] -246
+## [1] -140
+## [1] -102
+## [1] -64
+## [1] -392
+## [1] -76
+## [1] -8
+## [1] -292
+## [1] -154
+## [1] -120
+## [1] -24
+## [1] -232
+## [1] -382
+## [1] -330</code></pre>
 <ol start="9" style="list-style-type: decimal">
 <li>¿Qué hacen “for”, “ifelse” y “while”?</li>
 </ol>

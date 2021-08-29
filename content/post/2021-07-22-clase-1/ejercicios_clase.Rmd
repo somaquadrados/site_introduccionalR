@@ -137,7 +137,7 @@ if(colnames(datos) == "1"){
 
 11. ¿Cuál es la sintaxis para crear una función en R?
 
--   [ ]
+-   [ ] 
 
 ```{r eval=FALSE, include=TRUE}
 function <- f(a, b){
@@ -146,7 +146,7 @@ function <- f(a, b){
 }
 ```
 
--   [x]
+-   [x] 
 
 ```{r eval=FALSE, include=TRUE}
 f <- function(a, b){
@@ -155,7 +155,7 @@ f <- function(a, b){
 }
 ```
 
--   [ ]
+-   [ ] 
 
 ```{r eval=FALSE, include=TRUE}
 f(a,b) <- function{
@@ -176,25 +176,25 @@ f(a,b) <- function{
 
 13. Para instalar paquetes de CRAN, ¿qué comando usamos?
 
--   [ ] packages.install("nombre_paquete")
+-   [ ] `packages.install("nombre_paquete")`
 
--   [ ] install.packages(nombre_paquete)
+-   [ ] `install.packages(nombre_paquete)`
 
--   [x] install.packages("nombre_paquete")
+-   [x] `install.packages("nombre_paquete")`
 
 14. Para instalar paquetes de GITHUB, ¿qué comando usamos?
 
--   [x] devtools::install_github("repo/nombre_paquete")
+-   [x] `devtools::install_github("repo/nombre_paquete")`
 
--   [ ] devtools::install.github(repo/nombre_paquete)
+-   [ ] `devtools::install.github(repo/nombre_paquete)`
 
 15. ¿Cómo cargar el paquete para usarlo en R?
 
--   [ ] library("nombre_paquete")
+-   [ ] `library("nombre_paquete")`
 
--   [x] library(nombre_paquete)
+-   [x] `library(nombre_paquete)`
 
--   [ ] library_R("nombre_paquete")
+-   [ ] `library_R("nombre_paquete")`
 
 16. Es verdadero...
 
