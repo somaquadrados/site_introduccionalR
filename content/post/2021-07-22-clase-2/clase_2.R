@@ -943,6 +943,9 @@ dengue[,1] > dengue[,2]
 dengue[,4] %in% 0
 
 ## 3. Transformar el objeto "dengue" en un data.frame.
+dengue
+dengue2 <- data.frame(dengue)
+dengue2
 
 ## 3a. ¿Para qué sirve la función str()?
 str(dengue2)
@@ -952,14 +955,27 @@ head(dengue2)
 
 ## 3c. Agregue una columna con el nombre de los meses del año a la tabla.
 
+dengue2$mes <- c("enero", "febrero", "marzo", "abril", "mayo", "juno", "julio",
+                 "agosto", "septiembre", "octubre", "noviembte", "diciembre")
+
+meses <- c("enero", "febrero", "marzo", "abril", "mayo", "juno", "julio",
+           "agosto", "septiembre", "octubre", "noviembte", "diciembre")
+
+dengue2 <- dengue2 %>% mutate(meses = meses)
+
+dengue2[, "mes2"] <- meses
+
+dengue2
+
 ## 3d. El valor del mes 1 en el año 1 es ...
 dengue2[1, 1]
 
 ## ... Pero descubrió que este valor era incorrecto, en realidad es 500!
-dengue2[1, 1] = 500
+dengue2[1, 1] <- 500
 dengue2
 
 ## Ahora cambie el valor del mes 12 en el año 5 por 105.
+dengue2[12, 5] <- 105
 
 ## --
 
@@ -969,29 +985,43 @@ dengue2
 iris <- iris
 iris
 
+class(iris)
+
 ## 4. Convierte esta base en un tibble.
+iris2 <- as_tibble(iris)
 
 ## 5. Utilice glimpse() para ver una descripción general rápida de los datos.
+glimpse(iris2)
 
 ## 6. Imprima la columna "Sepal.Length" usando la función select(). Intente 
 ##    usar la función pull() en lugar de seleccionar para ver cuál es la 
 ##    diferencia.
+iris2 %>% select(Sepal.Length) %>% str()
+iris2 %>% pull(Sepal.Length) %>% str()
 
-## 7. Imprima toda la tabla excepto la columna "Species"  usando la función 
+## 7. Imprima toda la tabla excepto la columna "Species" usando la función 
 ##    select().
+iris2 %>% select(-Species)
 
 ## 8. Imprima las columnas Sepal.Length, Sepal.Width, Petal.Length y 
 ##    Petal.Width. Considere usar el símbolo de dos puntos (:) para simplificar 
 ##    la selección de columnas consecutivas.
+iris2 %>% select(Sepal.Length:Petal.Length, Species)
 
 ## 9. Crea dos columnas nuevas. El primero con la relación entre la altura y el 
 ##    ancho del sépalo y el segundo con del pétalo (length/width). 
+iris2 <- iris2 %>% 
+  mutate(sepal_razon = Sepal.Length/Sepal.Width,
+         petalo_razon = Petal.Length/Petal.Width)
+iris2
 
-## 10. Create an object called "iris2" with the species in the columns and the 
-##     measurements of "sepal" and "petal" in the rows.
-
-## 11. Crea un objeto llamado "iris2" con la especie en las columnas y las
+## 10. Crea un objeto llamado "iris2" con la especie en las columnas y las
 ##     medidas en las filas.
 
+iris %>% pivot_longer(c(Sepal.Length:Petal.Width), names_to = "parte_anatómica",
+                      values_to = "medidas") %>%
+  pivot_wider(names_from = Species, values_from = medidas, values_fn = mean)
+
+head(iris)
 # -------------------------- •• Fin •• ---------------------------------- #
 
