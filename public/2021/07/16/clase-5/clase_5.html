@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="author" content="" />
     <meta name="author" content="Marília Melo Favalesso" />
-    <script src="clase_5_files/header-attrs-2.9/header-attrs.js"></script>
+    <script src="clase_5_files/header-attrs-2.10/header-attrs.js"></script>
     <script src="clase_5_files/kePrint-0.0.1/kePrint.js"></script>
     <link href="clase_5_files/lightable-0.0.1/lightable.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -116,19 +116,18 @@ class: middle, center
 👉 **Eficiente**: Genere y actualice informes automáticamente (ej., HTML, MS Word y PDF).
 
 👉 **Atractivo**: Incruste figuras, mapas y tablas interactivos en los informes (solo HTML).
-]
 
 ### Aplicación 
 .pull-left[
 - [dashboard](https://pkgs.rstudio.com/flexdashboard/)
 - [site](https://bookdown.org/yihui/blogdown/)
 - [libros](https://bookdown.org/yihui/bookdown/)
-- [tesis](https://ourcodingclub.github.io/tutorials/R Markdown-dissertation/)
+- [tesis](https://ourcodingclub.github.io/tutorials/rmarkdown-dissertation/)
 ]
 .pull-right[
 - [diapositivas](https://beatrizmilz.github.io/IME-27-08-2019/#1)
-- [reportes](http://www.botanicaamazonica.wiki.br/labotam/doku.php?id=bot89:precurso:R Markdown:inicio)
-- [póster académico](póster académico)
+- [reportes](http://www.botanicaamazonica.wiki.br/labotam/doku.php?id=bot89:precurso:RMarkdown:inicio)
+- [póster académico](https://github.com/brentthorne/posterdown)
 - [↑ ¡mucho más!]()
 ]
 
@@ -198,10 +197,10 @@ class: middle, center
 
 ```r
 # Instalar desde CRAN
-install.packages('R Markdown')
+install.packages('RMarkdown')
 
 # O si desea probar la versión de desarrollo, instálela desde GitHub:
-devtools::install_github('rstudio/R Markdown') 
+devtools::install_github('rstudio/RMarkdown') 
 ```
 
 ------
@@ -443,7 +442,7 @@ class: middle, center
 
 .pull-left[
 
-- *Markdown* fue diseñado originalmente para ser la abreviatura de *HTML*. Por ejemplo, para poner un texto en cursiva en *HTML*, lo encierra en `&lt;em&gt;texto&lt;/em&gt;`. En *Markdown*, tenemos que hacer `\*texto\*`.
+- *Markdown* fue diseñado originalmente para ser la abreviatura de *HTML*. Por ejemplo, para poner un texto en cursiva en *HTML*, lo encierra en `&lt;em&gt;texto&lt;/em&gt;`. En *Markdown*, tenemos que hacer `*texto*`.
 
 - **R Markdown** usa la versión *Markdown* de [Pandoc](https://pandoc.org/MANUAL.html#pandocs-markdown), que difiere ligeramente del Markdown estándar.
 
@@ -769,20 +768,20 @@ datos &lt;- read_csv2("enejul2018.csv")
 ```
 
 ```
+## Rows: 660 Columns: 10
+```
+
+```
+## -- Column specification -------------------------------------------------------------------------------------------------------------
+## Delimiter: ";"
+## chr (4): departamento_nombre, provincia_nombre, evento_nombre, grupo_edad_desc
+## dbl (6): departamento_id, provincia_id, anio, semanas_epidemiologicas, grupo_edad_id, cantidad_casos
+```
+
+```
 ## 
-## -- Column specification ----------------------------------------------------------------------
-## cols(
-##   departamento_id = col_double(),
-##   departamento_nombre = col_character(),
-##   provincia_id = col_double(),
-##   provincia_nombre = col_character(),
-##   anio = col_double(),
-##   semanas_epidemiologicas = col_double(),
-##   evento_nombre = col_character(),
-##   grupo_edad_id = col_double(),
-##   grupo_edad_desc = col_character(),
-##   cantidad_casos = col_double()
-## )
+## i Use `spec()` to retrieve the full column specification for this data.
+## i Specify the column types or set `show_col_types = FALSE` to quiet this message.
 ```
 
 &gt; ¿Qué variables están disponibles en esta tabla?
