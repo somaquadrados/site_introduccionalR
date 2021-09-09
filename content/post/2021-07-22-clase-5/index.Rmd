@@ -32,7 +32,7 @@ knitr::include_url('clase_5.html')
 
 ## Youtube
 
-[Vídeo clase 5]()
+[Vídeo clase 5](https://youtu.be/oo4nwX4QWtQ)
 
 ## Formulario de envío de ejercicios
 
