@@ -1,0 +1,117 @@
+---
+title: "Introducción al análisis de datos biológicos con R"
+subtitle: "Trabajo Final"
+author: 
+  - "<img src = 'https://github.com/Soma-dos-Quadrados/ArtesSoma/blob/main/simbolo_smfundo4.png?raw=true' width = '25%'>"
+  - "24 de septiembre de 2021"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:10
+---
+##CONTENIDOS
+
+<br>
+
+-**Introducción al curso**
+
+-**Objetos y atribuciones; Estructuras de objetos; Funciones**
+
+-**Datos biológicos; importar y manipular bases de datos**
+
+-**Variables estadísticas: medidas de posición y dispersión**
+
+-**Estadísticas descriptivas: frecuencias y gráficos**
+
+-**Informes dinámicos con Rmarkdown**
+
+-**Presentación del proyecto desarrollado**
+
+---
+<br>
+
+<br>
+<br>  
+ <center>
+![gato](https://media4.giphy.com/media/vSSdLSLbGIXio/giphy.gif)  
+---
+##**CONSIGNAS**
+<br>
+
+1.	Basado en su proyecto de investigación, plantee una breve introducción explicando:
+
+ a) objeto de estudio
+ 
+ b) sitio de estudio
+ 
+ c)importancia del trabajo
+
+**Ejemplo**: *El Síndrome Pulmonar por Hantavirus es una enfermedad endémica de nuestro continene, y se estima que en Sudamérica se reportan 5000 casos por año (OPS, 2020), los cuales se encuentran concentrados principalmente en Brasil y Argentina. En nuestro país, existen cuatro regiones endémicas para esta enfermedad, que difieren en las especies reservorio, características ambientales, variantes circulantes e incidencia de la enfermedad. Si bien Misiones es parte de la región endémica nordeste, poco se conoce sobre los factores que intervienen en la emergencia de la enfermedad,  asi como de los reservorio y variantes presentes en dicho territorio.*
+---
+##**CONSIGNAS**
+<br>
+
+2.Plantee el objetivo de manera breve y clara
+
+**Ejemplo**
+<br>
+
+**OBJETIVO**: *Identificar las especies de roedores en diferentes usos del suelo del norte de la provincia de Misiones, atendiendo a los factores que intervienen en su distribución y abundancias, así como identificar las variantes de orthohantavirus que circulan en sus poblaciones y qué factores modifican la seroprevalencia en dichas poblaciones*
+---
+##**CONSIGNAS**
+<br>
+<br>
+
+3.Simule los resultados que espera obtener durante su trabajo.
+<br>
+
+4.Cree una tabla con estos datos y exportela en formato **.csv**
+<br>
+
+5.Identifique cuales son las variables **respuesta** y **explicativas** 
+<br>
+
+6.Identifique claramente a qué **tipo de variables** corresponden.
+
+.right[<img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSch2zS4H1V3SM4w8i2P1x8S1DukxLIPKcQLyfjbfQBt1MkO6ipIQAXj1HRdpdMMvyQNoU&usqp=CAU' width = '20%'>] 
+---
+##**CONSIGNAS**
+<br>
+<br>
+
+7.Utilizando los conocimientos adquiridos durante el curso, elabore un informe estadístico utilizando Rmarkdown.
+
+8.El informe debe contener una descripción estadística de sus datos (medidas de tendencia central y variabilidad)
+
+9.Recuerde utilizar al menos un gráfico y una tabla para visualizar sus resultados/datos.
+.right[<img src = 'https://img.wattpad.com/804c8738be736f9967303107b2e70ae6938dfd18/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4b336e744647353044724b4c56513d3d2d3133352e313537316565386535366237353137303839363736353935303134322e6a7067?s=fit&w=720&h=720' width = '30%'>] 
+---
+<br>
+<br>
+**¡¡IMPORTANTE!!**
+
+Recuerde que tanto gráficos como tablas deben ser interpretables sin necesidad de leer el texto completo, por lo que no olvide colocarle título y nombres a los ejes, referencia si hay colores (en el gráfico o en el pie de gráfico).
+
+No se recomienda el uso de abreviaturas en las tablas, pero de ser necesario hacerlo, aclare a qué referien en el encabezado de la tabla. 
+
+Todo lo que se grafique y/o exprese en tablas debe estar relacionado y citado en el texto. 
+
+<center>
+
+**Nos encontramos el viernes 24 para presentar los informes y concluir el curso. Cada alumno dispondrá de un máximo de 20 minutos para su presentación**
+---
+<br>
+**Dudas y/o consultas** 
+<br>
+<br>
+[efburgos@conicet.gov.ar]() ; [mariliabioufpr@gmail.com]()
+
+<br>
+
+<center>
+![gato](https://media0.giphy.com/media/paMVbhw7bnZLi/giphy.gif) 
+
+

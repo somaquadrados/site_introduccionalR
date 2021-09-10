@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción al análisis de datos biológicos con R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="author" content="24 de septiembre de 2021" />
+    <script src="Trabajo_final_files/header-attrs-2.10/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introducción al análisis de datos biológicos con R
+## Trabajo Final
+### <img src = 'https://github.com/Soma-dos-Quadrados/ArtesSoma/blob/main/simbolo_smfundo4.png?raw=true' width = '25%'>
+### 24 de septiembre de 2021
+
+---
+
+##CONTENIDOS
+
+&lt;br&gt;
+
+-**Introducción al curso**
+
+-**Objetos y atribuciones; Estructuras de objetos; Funciones**
+
+-**Datos biológicos; importar y manipular bases de datos**
+
+-**Variables estadísticas: medidas de posición y dispersión**
+
+-**Estadísticas descriptivas: frecuencias y gráficos**
+
+-**Informes dinámicos con Rmarkdown**
+
+-**Presentación del proyecto desarrollado**
+
+---
+&lt;br&gt;
+
+&lt;br&gt;
+&lt;br&gt;  
+ &lt;center&gt;
+![gato](https://media4.giphy.com/media/vSSdLSLbGIXio/giphy.gif)  
+---
+##**CONSIGNAS**
+&lt;br&gt;
+
+1.	Basado en su proyecto de investigación, plantee una breve introducción explicando:
+
+ a) objeto de estudio
+ 
+ b) sitio de estudio
+ 
+ c)importancia del trabajo
+
+**Ejemplo**: *El Síndrome Pulmonar por Hantavirus es una enfermedad endémica de nuestro continene, y se estima que en Sudamérica se reportan 5000 casos por año (OPS, 2020), los cuales se encuentran concentrados principalmente en Brasil y Argentina. En nuestro país, existen cuatro regiones endémicas para esta enfermedad, que difieren en las especies reservorio, características ambientales, variantes circulantes e incidencia de la enfermedad. Si bien Misiones es parte de la región endémica nordeste, poco se conoce sobre los factores que intervienen en la emergencia de la enfermedad,  asi como de los reservorio y variantes presentes en dicho territorio.*
+---
+##**CONSIGNAS**
+&lt;br&gt;
+
+2.Plantee el objetivo de manera breve y clara
+
+**Ejemplo**
+&lt;br&gt;
+
+**OBJETIVO**: *Identificar las especies de roedores en diferentes usos del suelo del norte de la provincia de Misiones, atendiendo a los factores que intervienen en su distribución y abundancias, así como identificar las variantes de orthohantavirus que circulan en sus poblaciones y qué factores modifican la seroprevalencia en dichas poblaciones*
+---
+##**CONSIGNAS**
+&lt;br&gt;
+&lt;br&gt;
+
+3.Simule los resultados que espera obtener durante su trabajo.
+&lt;br&gt;
+
+4.Cree una tabla con estos datos y exportela en formato **.csv**
+&lt;br&gt;
+
+5.Identifique cuales son las variables **respuesta** y **explicativas** 
+&lt;br&gt;
+
+6.Identifique claramente a qué **tipo de variables** corresponden.
+
+.right[&lt;img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSch2zS4H1V3SM4w8i2P1x8S1DukxLIPKcQLyfjbfQBt1MkO6ipIQAXj1HRdpdMMvyQNoU&amp;usqp=CAU' width = '20%'&gt;] 
+---
+##**CONSIGNAS**
+&lt;br&gt;
+&lt;br&gt;
+
+7.Utilizando los conocimientos adquiridos durante el curso, elabore un informe estadístico utilizando Rmarkdown.
+
+8.El informe debe contener una descripción estadística de sus datos (medidas de tendencia central y variabilidad)
+
+9.Recuerde utilizar al menos un gráfico y una tabla para visualizar sus resultados/datos.
+.right[&lt;img src = 'https://img.wattpad.com/804c8738be736f9967303107b2e70ae6938dfd18/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4b336e744647353044724b4c56513d3d2d3133352e313537316565386535366237353137303839363736353935303134322e6a7067?s=fit&amp;w=720&amp;h=720' width = '30%'&gt;] 
+---
+&lt;br&gt;
+&lt;br&gt;
+**¡¡IMPORTANTE!!**
+
+Recuerde que tanto gráficos como tablas deben ser interpretables sin necesidad de leer el texto completo, por lo que no olvide colocarle título y nombres a los ejes, referencia si hay colores (en el gráfico o en el pie de gráfico).
+
+No se recomienda el uso de abreviaturas en las tablas, pero de ser necesario hacerlo, aclare a qué referien en el encabezado de la tabla. 
+
+Todo lo que se grafique y/o exprese en tablas debe estar relacionado y citado en el texto. 
+
+&lt;center&gt;
+
+**Nos encontramos el viernes 24 para presentar los informes y concluir el curso. Cada alumno dispondrá de un máximo de 20 minutos para su presentación**
+---
+&lt;br&gt;
+**Dudas y/o consultas** 
+&lt;br&gt;
+&lt;br&gt;
+[efburgos@conicet.gov.ar]() ; [mariliabioufpr@gmail.com]()
+
+&lt;br&gt;
+
+&lt;center&gt;
+![gato](https://media0.giphy.com/media/paMVbhw7bnZLi/giphy.gif) 
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:10"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

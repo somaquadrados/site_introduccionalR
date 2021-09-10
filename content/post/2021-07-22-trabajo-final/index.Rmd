@@ -1,0 +1,18 @@
+---
+title: Trabajo Final
+author: ''
+date: '2021-07-15'
+slug: clase-5
+categories: []
+tags: []
+---
+
+## Diapositivas
+
+```{r echo=FALSE}
+knitr::include_url('Trabajo_final.html')
+```
+
+[Download en PDF](Trabajo_final.pdf)
+
+
