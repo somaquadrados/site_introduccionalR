@@ -42,3 +42,10 @@ knitr::include_url('Clase_4_ejercicios.html')
 ## Formulario de envío de ejercicios
 
 [Clic aquí](https://docs.google.com/forms/d/e/1FAIpQLSdXgG901WWmxcIkoagjPqXezzgyte-DjN0aIcqvxuxbQBCWuA/viewform)
+
+--------------------------------------------------------------------------------
+
+## Ejercicios resueltos
+
+- [🏠 casa](Clase_4_viernes.R)
+

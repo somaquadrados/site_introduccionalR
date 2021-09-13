@@ -46,3 +46,17 @@ knitr::include_url('Ejercicios.html')
 ## Formulario de envío de ejercicios
 
 [Clic aquí](https://docs.google.com/forms/d/e/1FAIpQLSdFYSnzmMZKlmxP12KDPQwA91Vn_9ndiKZn_2DsjZjtHn6xIg/viewform)
+
+--------------------------------------------------------------------------------
+
+
+## Ejercicios resueltos
+
+- [🏫 clase](Clase3_Ejercicios_repaso.pdf)
+
+- [🏠 casa](Clase_3_Ejercicios_resueltos.R)
+
+
+
+
+
