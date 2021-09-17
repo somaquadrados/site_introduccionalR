@@ -37,3 +37,13 @@ knitr::include_url('clase_5.html')
 ## Formulario de envío de ejercicios
 
 [Clic aquí](https://forms.gle/x4EbVJX76dZo3FQP9)
+
+--------------------------------------------------------------------------------
+
+## Ejercicios resueltos
+
+- [informe_junio2018.Rmd](informe_junio2018.Rmd)
+
+- [informe_dic2018.Rmd](informe_dic2018.Rmd)
+
+
