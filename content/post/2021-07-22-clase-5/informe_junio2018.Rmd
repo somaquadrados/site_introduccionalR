@@ -5,9 +5,9 @@ author:
 - "Eliana Burgos"
 date: "15/07/2021"
 output:
-  pdf_document: null
   html_document:
     df_print: paged
+  pdf_document: null
 fontsize: 12pt
 geometry:
 - top = 20mm
@@ -16,21 +16,16 @@ geometry:
 - right = 15mm
 linestretch: 1.5
 linkcolor: blue
-toc: TRUE
 ---
 
-# Titulo
-
-## Subtitulo 
-
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+```{r eval=FALSE, include=TRUE}
 # Instale los paquetes ----------------------------------------------
 install.packages("kableExtra")
 install.packages("viridis")
 install.packages("ggthemes")
 ```
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
+```{r message=FALSE, warning=FALSE}
 ## Paquetes ----------------------------------------------------------
 library(tidyverse) # paquete para manipulación de bases de datos
 library(kableExtra) # paquete para formatación de tablas
@@ -65,7 +60,7 @@ newdt <- datos %>%
 En el período de `r paste0(mes_comiezo, "-", mes_final)` del año `r paste0(ano)`, Argentina totalizó `r newdt$Casos %>% sum(na.rm = TRUE)` casos de dengue, siendo la provincia de `r newdt[1,1] %>% paste0()` la que presenta mayor número de afectados (tabla 1).
 
 
-```{r tab1, echo=FALSE, message=FALSE, warning=FALSE, float = T}
+```{r message=FALSE, warning=FALSE}
 ## n casos en las provincias --------------------------------------
 newdt %>%
   kableExtra::kbl(booktabs = T, align = "c", caption = "Distribución de casos de dengue por provincia de Argentina.", longtable = T) %>%

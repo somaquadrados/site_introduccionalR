@@ -42,8 +42,10 @@ knitr::include_url('clase_5.html')
 
 ## Ejercicios resueltos
 
-- [informe_junio2018.Rmd](informe_junio2018.Rmd)
+- [informe_junio2018 (script)](informe_junio2018.html)
+- [informe_junio2018 (pdf)](informe_junio2018.pdf)
 
-- [informe_dic2018.Rmd](informe_dic2018.Rmd)
+- [informe_dic2018 (script)](informe_dic2018.html)
+- [informe_dic2018 (pdf)](informe_junio2018.pdf)
 
 
